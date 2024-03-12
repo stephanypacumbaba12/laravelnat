@@ -3,7 +3,7 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="{{asset('images/logo.png')}}">
+  <link rel="icon" href="{{asset('images/logologo.png')}}">
     <!-- <link rel="stylesheet" href="{{asset('bootstrap/icons/font/bootstrap-icons.min.css')}}"> -->
     <link rel="stylesheet" href="{{ asset('css/css.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
@@ -19,7 +19,7 @@
 <body>
 @section('header')
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="/">Gaming App</a>
+<a class="navbar-brand" href="/"><img src="images/logologo.png" style="width:50px;"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
