@@ -3,7 +3,7 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="{{asset('images/logo.png')}}">
+  <link rel="icon" href="{{asset('images/logo.png')}}">
     <!-- <link rel="stylesheet" href="{{asset('bootstrap/icons/font/bootstrap-icons.min.css')}}"> -->
     <link rel="stylesheet" href="{{ asset('css/css.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
@@ -11,11 +11,8 @@
 
 
     <head>
-        <title>Gaming App - @yield('title')</title>
+          <title>Gaming App - @yield('title')</title>
     </head>
-
-  <!-- Bootstrap CSS -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
 
 
 <body>
@@ -62,14 +59,19 @@
 </nav>
 @show
 
-@section('hero')
-<section class="hero">
-  <div class="hero-content">
-    <h1>Welcome to GamingApp</h1>
-    <p>Discover a world of endless gaming possibilities.</p>
-    <a href="#" class="btn btn-primary">Play Now</a>
-  </div>
-</section>
+@section('profile')
+<section class="profile-info">
+        <div class="profile-picture">
+            <img src="profile-picture.jpg" alt="Profile Picture">
+        </div>
+        <div class="profile-details">
+            <h2>John Doe</h2>
+            <p>Email: john.doe@example.com</p>
+            <p>Country: United States</p>
+            <p>Member Since: January 2022</p>
+            <button>Edit Profile</button>
+        </div>
+    </section>
 @show
 
 @section('feature')
@@ -151,16 +153,6 @@
 </section>
 @show
 
-@section('about')
-<section class="about">
-  <div class="container">
-    <h2>About Us</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  </div>
-</section>
-@show
-
 @section('blog')
 <section class="blog">
   <div class="container">
@@ -229,8 +221,6 @@
     </div>
   </div>
 </footer>
-
-
 @show
 <!-- Bootstrap JS (Optional) - Needed for dropdown functionality -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

@@ -1,24 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="{{asset('images/logo.png')}}">
-    <!-- <link rel="stylesheet" href="{{asset('bootstrap/icons/font/bootstrap-icons.min.css')}}"> -->
-    <link rel="stylesheet" href="{{ asset('css/css.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    
-
-
-    <head>
-        <title>Gaming App - @yield('title')</title>
-    </head>
-
+  <title>Gaming App</title>
   <!-- Bootstrap CSS -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Navbar Brand */
+.navbar-brand {
+  font-size: 1.5rem; /* Adjust the font size as needed */
+}
 
+/* Navbar Link */
+.navbar-nav .nav-link {
+  font-size: 1.2rem; /* Adjust the font size as needed */
+}
 
+/* Dropdown Menu */
+.dropdown-menu {
+  min-width: 150px; /* Set the minimum width of the dropdown menu */
+}
+
+/* Dropdown Menu Item */
+.dropdown-menu .dropdown-item {
+  font-size: 1rem; /* Adjust the font size as needed */
+}
+
+/* Active Link */
+.navbar-nav .nav-item.active .nav-link {
+  color: #007bff; /* Change the color of the active link */
+}
+
+/* Hero section styles */
+.hero {
+    background-image: url('back.webp');
+    background-size: cover;
+    text-align: center;
+    background-attachment: fixed;
+    padding: 100px 20px;
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #cc5500;
+}
+/* Button Styles */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Change the background color on hover */
+}
+
+/* Primary Button Styles */
+.btn-primary {
+  background-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Change the background color on hover */
+}
+
+/* Features Section */
+.features {
+  padding: 80px 0;
+}
+
+/* Feature Item */
+.feature-item {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.feature-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.feature-item h3 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.feature-item p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Games Showcase Section */
+.games-showcase {
+  padding: 80px 0;
+}
+
+.games-showcase h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Game Item */
+.game-item {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.game-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.game-item h3 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.game-item p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 80px 0;
+}
+
+.testimonials h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Testimonial */
+.testimonial {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.testimonial img {
+  width: 100px; /* Adjust the width of the avatar image */
+  height: 100px; /* Adjust the height of the avatar image */
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.testimonial p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.testimonial .author {
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* About Section */
+.about {
+  padding: 80px 0;
+}
+
+.about h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Blog Section */
+.blog {
+  padding: 80px 0;
+}
+
+.blog h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Blog Post */
+.blog-post {
+  margin-bottom: 40px;
+}
+
+.blog-post img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.blog-post h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.blog-post .post-date {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.blog-post p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.read-more {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+  background-color: #0056b3;
+}
+
+/* Newsletter Section */
+.newsletter {
+  background-color: #f9f9f9;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.newsletter h2 {
+  margin-bottom: 20px;
+}
+
+.newsletter p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+/* Newsletter Form */
+.newsletter-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.newsletter-form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.newsletter-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.footer h3 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  font-size: 0.9rem;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons li a {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.social-icons li a:hover {
+  color: #007bff;
+}
+
+    </style>
+</head>
 <body>
+
+
 @section('header')
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="/">Gaming App</a>
@@ -62,15 +389,18 @@
 </nav>
 @show
 
-@section('hero')
-<section class="hero">
-  <div class="hero-content">
-    <h1>Welcome to GamingApp</h1>
-    <p>Discover a world of endless gaming possibilities.</p>
-    <a href="#" class="btn btn-primary">Play Now</a>
+
+@section('about')
+<section class="about">
+  <div class="container">
+    <h2>About Us</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
   </div>
 </section>
 @show
+
+
 
 @section('feature')
 <section class="features">
@@ -147,16 +477,6 @@
       <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
       <p class="author">- Jane Smith</p>
     </div>
-  </div>
-</section>
-@show
-
-@section('about')
-<section class="about">
-  <div class="container">
-    <h2>About Us</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
   </div>
 </section>
 @show

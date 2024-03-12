@@ -3,7 +3,7 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="{{asset('images/logo.png')}}">
+  <link rel="icon" href="{{asset('images/logo.png')}}">
     <!-- <link rel="stylesheet" href="{{asset('bootstrap/icons/font/bootstrap-icons.min.css')}}"> -->
     <link rel="stylesheet" href="{{ asset('css/css.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
@@ -11,14 +11,12 @@
 
 
     <head>
-        <title>Gaming App - @yield('title')</title>
+          <title>Gaming App - @yield('title')</title>
     </head>
 
-  <!-- Bootstrap CSS -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
-
-
 <body>
+
+
 @section('header')
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="/">Gaming App</a>
@@ -62,15 +60,7 @@
 </nav>
 @show
 
-@section('hero')
-<section class="hero">
-  <div class="hero-content">
-    <h1>Welcome to GamingApp</h1>
-    <p>Discover a world of endless gaming possibilities.</p>
-    <a href="#" class="btn btn-primary">Play Now</a>
-  </div>
-</section>
-@show
+
 
 @section('feature')
 <section class="features">
@@ -101,6 +91,17 @@
   </div>
 </section>
 @show
+
+@section('about')
+<section class="about">
+  <div class="container">
+    <h2>About Us</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+</section>
+@show
+
 
 @section('game')
 <section class="games-showcase">
@@ -147,16 +148,6 @@
       <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
       <p class="author">- Jane Smith</p>
     </div>
-  </div>
-</section>
-@show
-
-@section('about')
-<section class="about">
-  <div class="container">
-    <h2>About Us</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
   </div>
 </section>
 @show

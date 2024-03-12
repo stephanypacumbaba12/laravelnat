@@ -3,22 +3,23 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="{{asset('images/logo.png')}}">
+  <link rel="icon" href="{{asset('images/logo.png')}}">
     <!-- <link rel="stylesheet" href="{{asset('bootstrap/icons/font/bootstrap-icons.min.css')}}"> -->
     <link rel="stylesheet" href="{{ asset('css/css.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    
+    <style>
+      
+    </style>
 
 
     <head>
-        <title>Gaming App - @yield('title')</title>
+          <title>Gaming App - @yield('title')</title>
     </head>
-
-  <!-- Bootstrap CSS -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
 
 
 <body>
+
+
 @section('header')
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="/">Gaming App</a>
@@ -62,15 +63,13 @@
 </nav>
 @show
 
-@section('hero')
-<section class="hero">
-  <div class="hero-content">
-    <h1>Welcome to GamingApp</h1>
-    <p>Discover a world of endless gaming possibilities.</p>
-    <a href="#" class="btn btn-primary">Play Now</a>
-  </div>
-</section>
-@show
+@section('her')
+<section class="aa">
+        <h2>Explore Limitless Worlds</h2>
+        <p>Embark on epic journeys across vast landscapes, from enchanted realms to post-apocalyptic wastelands.</p>
+        <a href="#" class="bb">Get Started</a>
+    </section>
+    @show
 
 @section('feature')
 <section class="features">
