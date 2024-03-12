@@ -1,6 +1,6 @@
 @extends('signuptemplet')
 @section('title')
-HOME
+SIGNup
 @endsection
 
 

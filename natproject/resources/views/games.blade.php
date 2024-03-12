@@ -1,6 +1,6 @@
 @extends('gamestemplet')
 @section('title')
-HOME
+GAME
 @endsection
 
 

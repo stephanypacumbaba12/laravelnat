@@ -1,6 +1,6 @@
 @extends('featuredtemplet')
 @section('title')
-HOME
+FEATURE
 @endsection
 
 

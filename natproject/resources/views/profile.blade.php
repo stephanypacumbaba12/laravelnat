@@ -1,6 +1,6 @@
 @extends('profiletemplet')
 @section('title')
-HOME
+PROFILE
 @endsection
 
 

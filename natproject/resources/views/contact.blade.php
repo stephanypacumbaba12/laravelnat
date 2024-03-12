@@ -1,6 +1,6 @@
 @extends('contacttemplet')
 @section('title')
-HOME
+CONTACT
 @endsection
 
 

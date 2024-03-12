@@ -1,6 +1,6 @@
 @extends('abouttemplet')
 @section('title')
-HOME
+ABOUT
 @endsection
 
 

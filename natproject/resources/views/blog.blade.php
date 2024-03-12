@@ -1,6 +1,6 @@
 @extends('blogtemplet')
 @section('title')
-HOME
+BLOG
 @endsection
 
 

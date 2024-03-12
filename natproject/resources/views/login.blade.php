@@ -1,6 +1,6 @@
 @extends('logintemplet')
 @section('title')
-HOME
+LOGin
 @endsection
 
 
